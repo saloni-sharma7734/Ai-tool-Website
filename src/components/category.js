@@ -225,7 +225,7 @@ const SocialIcons = styled('div')({
         },
     },
 });
-const AIcategeory = () => {
+const Categeory = () => {
     const theme = useTheme();
     const [sparklePosition, setSparklePosition] = useState({ x: 0, y: 0 });
     const[products,setProducts] = useState([])
@@ -268,13 +268,13 @@ const AIcategeory = () => {
                         <HeaderPaper elevation={3}>
                             <Typography variant="h3">
 
-                                Copywriting AI Tools
+                            AI Tools Categories
 
                             </Typography>
                         </HeaderPaper>
                         <MainContentPaper elevation={3}>
                             <StyledTypography variant="h4">
-                                Compelling Content Made Easy - Top AI Copywriting Tools
+                                Explore Top AI Copywriting Tools
                             </StyledTypography>
                         </MainContentPaper>
                         <GetStartedButton variant="contained">Get Started</GetStartedButton>
@@ -284,7 +284,7 @@ const AIcategeory = () => {
                             <Grid item md={12}></Grid>
                             <Grid item md={12}>
                                 <div className="d-flex justify-content-end" style={{ marginTop: '50px', marginRight: '120px' }}>
-                                    <img src="https://findmyaitool.com/assets/images/3D/copywriting.png" alt="AI Image" style={{ height: '250px' }} />
+                                    <img src="https://findmyaitool.com/assets/images/3D/design-assistant.png" alt="AI Image" style={{ height: '300px' }} />
                                 </div>
                             </Grid>
                         </Grid>
@@ -296,74 +296,48 @@ const AIcategeory = () => {
             </AppContainer>
             <FeaturedToolsContainer elevation={3}>
                 <FeaturedToolsHeading variant="h4">
-                   AI Tools List
+                   All Categeories
                 </FeaturedToolsHeading>
-
-
-
-
                 <CardListContainer container spacing={3}>
-  {products.map((data) => (
-    <Grid item xs={12} md={6} lg={3} key={data._id}>
-       <Link to={`/tool/${data._id}`}>
-        <CardItem elevation={3}>
-          {/* <a href="https://findmyaitool.com/category/copywriting" target="_blank" rel="noopener noreferrer" /> */}
-          <img
-            src={Aiimage2}
-            alt="Card 1 Image"
-            style={{ width: '100%', borderRadius: '10px' }}
-          />
-            <Typography variant="h6">{data.title}</Typography>
-            <Typography variant="body2">{`${data.description.slice(0, 50)}...`}</Typography>
-          <ButtonContainer>
-            <VisitButton
-              variant="contained"
-              href="https://www.writeme.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit
-            </VisitButton>
-            <SaveButton variant="contained">Save</SaveButton>
-          </ButtonContainer>
-        </CardItem>
-      </Link>
-    </Grid>
-  ))}
-</CardListContainer>
+                    <Grid item xs={12} md={6} lg={3}>
+                        <CardItem elevation={3}>
+                            <a href="https://findmyaitool.com/category/copywriting" target="_blank" rel="noopener noreferrer" />
+                           
+                            <Typography variant="h6">Email Assistant</Typography>
+                            <Typography variant="body2">Manage your inbox like a pro</Typography>
+                           
+                        </CardItem>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={3}>
+                        <CardItem elevation={3}>
+                           
+                            <Typography variant="h6">Social Media Assistant</Typography>
+                            <Typography variant="body2">Copywriting</Typography>
+                           
+                        </CardItem>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={3}>
+                        <CardItem elevation={3}>
+                            
+                            <Typography variant="h6">SEO</Typography>
+                            <Typography variant="body2">Top Ai SEO Tools</Typography>
+                          
+                        </CardItem>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={3}>
+                        <CardItem elevation={4}>
+                           
+                            <Typography variant="h6">Prompts</Typography>
+                            <Typography variant="body2">Copywriting</Typography>
+                          
+                        </CardItem>
+                    </Grid>
+                </CardListContainer>
 
 
 
 
-<CardListContainer2 container spacing={3}>
-  {products.map((data) => (
-    <Grid item xs={12} md={6} lg={3} key={data._id}>
-       <Link to={`/writemeai/${data._id}`}>
-        <CardItem elevation={3}>
-          {/* <a href="https://findmyaitool.com/category/copywriting" target="_blank" rel="noopener noreferrer" /> */}
-          <img
-            src={Aiimage2}
-            alt="Card 1 Image"
-            style={{ width: '100%', borderRadius: '10px' }}
-          />
-            <Typography variant="h6">{data.title}</Typography>
-            <Typography variant="body2">{`${data.description.slice(0, 50)}...`}</Typography>
-          <ButtonContainer>
-            <VisitButton
-              variant="contained"
-              href="https://www.writeme.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit
-            </VisitButton>
-            <SaveButton variant="contained">Save</SaveButton>
-          </ButtonContainer>
-        </CardItem>
-      </Link>
-    </Grid>
-  ))}
-</CardListContainer2>
+                
                 <OverlappingCardContainer container spacing={3}>
 
                 </OverlappingCardContainer>
@@ -395,4 +369,4 @@ const AIcategeory = () => {
     );
 };
 
-export default AIcategeory;
+export default Categeory;

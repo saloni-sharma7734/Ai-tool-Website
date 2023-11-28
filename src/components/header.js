@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { styled } from '@mui/system';
+import logo from '../components/images/logo.jpg'
 
 const StyledAppBar = styled(AppBar)({
   backgroundColor: '#000000',
@@ -25,10 +26,10 @@ const Header = () => {
       <Toolbar sx={{ justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }}>
         <div>
         
-          <img src="path-to-your-logo.png" alt=" Logo" style={{ height: '40px', width: 'auto' }} className={useStyles.logo} />
+          <img src={logo} alt=" Logo" style={{ height: '50px', width: 'auto',marginTop:'10px' }} className={useStyles.logo} />
           
           <Typography variant="h6" sx={{ ...useStyles.title, marginBottom: '10px' }}>
-        LOGO
+        
           </Typography>
         </div>
         
@@ -37,8 +38,8 @@ const Header = () => {
           <Button color="inherit" sx={{ marginBottom: '8px' }} href='/home'>
             Home
           </Button>
-          <Button color="inherit" sx={{ marginBottom: '8px' }} href='/aicategeory'>
-            AI Category
+          <Button color="inherit" sx={{ marginBottom: '8px' }} href='/category'>
+           Category
           </Button>
           <Button color="inherit" sx={{ marginBottom: '8px' }}>
             Blog
